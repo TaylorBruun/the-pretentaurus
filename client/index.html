@@ -48,13 +48,13 @@
           <form onsubmit="app.postsController.createPost()" action="">
             <div class="row">
               <div class="col-6">
-                <input class="form-control" type="text" name="url" id="url" placeholder="Add Image Url...">
+                <input class="form-control" required type="text" name="url" id="url" placeholder="Add Image Url...">
               </div>
               <div class="col-6">
-                <input class="form-control" type="text" name="title" id="title" placeholder="Add Title...">
+                <input class="form-control" required type="text" name="title" id="title" placeholder="Add Title...">
               </div>
               <div class="col-12">
-                <textarea class="form-control mt-3" type="textarea" name="description" id="description"
+                <textarea class="form-control mt-3" required type="textarea" name="description" id="description"
                   placeholder="Add a Description..." rows="3"></textarea>
               </div>
             </div>
@@ -69,14 +69,15 @@
   </div>
 
 
-  <div class="modal fade" id="post-comment-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade comment-bg-color" id="post-comment-modal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-xl">
-      <div class="modal-content">
+      <div class="modal-content modal-bg-color">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel"></h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
+        <div class="modal-body ">
           <div id="comment-body-post">
 
           </div>

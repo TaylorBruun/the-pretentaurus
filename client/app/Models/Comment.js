@@ -11,11 +11,13 @@ export class Comment {
 
   get Template() {
     return `
+    <div class="d-flex justify-content-around">
  <div class="col-3">
         ${this.name}
       </div>
       <div class="col-9">
         ${this.originalDescription}
+      </div>
       </div>
 `
   }

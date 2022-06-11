@@ -14,7 +14,6 @@ export class CommentsController {
         console.log('comment controllers');
         this.getComments()
         ProxyState.on('currentComments', _draw)
-
     }
 
     async createComment(id) {
@@ -26,7 +25,7 @@ export class CommentsController {
             originalDescription: form.originalDescription.value
         }
         form.reset()
-        console.log(data);
+        // console.log(data);
         try {
             await commentsService.createComment(data)
         } catch (error) {
