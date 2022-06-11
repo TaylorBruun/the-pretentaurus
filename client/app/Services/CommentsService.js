@@ -27,6 +27,9 @@ class CommentsService {
     async likeComment(id) {
         const res = await api.put('api/comments/' + id + '/likes')
         console.log(res.data);
+        ProxyState.currentComments.find(c => c.id == id)
+        console.log(ProxyState.currentComments.find(c => c.id == id));
+
     }
 
 }
