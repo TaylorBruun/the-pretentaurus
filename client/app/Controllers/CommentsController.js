@@ -14,7 +14,6 @@ export class CommentsController {
         console.log('comment controllers');
         this.getComments()
         ProxyState.on('currentComments', _draw)
-
     }
 
     async createComment(id) {

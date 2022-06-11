@@ -10,7 +10,7 @@ function _draw() {
 
 
 
-export class PostController {
+export class PostsController {
     constructor() {
         console.log('post controllers');
         this.getPosts()
@@ -75,6 +75,4 @@ export class PostController {
         await postsService.likePost(id, {})
         await this.getPosts()
     }
-
-
 }
