@@ -4,7 +4,7 @@ async function getWords(word, index) {
   const res = await axios.get(`https://dictionaryapi.com/api/v3/references/thesaurus/json/${word}?key=eb472d40-a27d-4eec-a6f1-91e39cc61e27`)
   return {
     index,
-    newWord: res.data[0].meta?.syns[0][Math.floor(Math.random() * 15)] || res.data[Math.floor(Math.random() * 15)]
+    newWord: res.data[0].meta?.syns[0][Math.floor(Math.random() * res.data[0].meta.syns[0].length)] || res.data[Math.floor(Math.random() * 4)]
   }
 }
 

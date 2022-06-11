@@ -3,7 +3,7 @@ import { thesaurusService } from "../Services/ThesaurusService.js";
 
 export class ThesaurusController {
   constructor() {
-
+    ThesaurusController.changeDescription('picture')
   }
 
   static async changeDescription(desc) {
