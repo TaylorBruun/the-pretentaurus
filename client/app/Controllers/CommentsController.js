@@ -54,5 +54,6 @@ export class CommentsController {
     async likeComment(id) {
         await commentsService.likeComment(id, {})
 
+
     }
 }
