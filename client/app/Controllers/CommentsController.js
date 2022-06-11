@@ -50,4 +50,9 @@ export class CommentsController {
         }
         this.getComments()
     }
+
+    async likeComment(id) {
+        await commentsService.likeComment(id, {})
+
+    }
 }

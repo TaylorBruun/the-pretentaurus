@@ -24,6 +24,11 @@ class CommentsService {
         ProxyState.currentComments = ProxyState.currentComments.filter(c => c.id !== id)
     }
 
+    async likeComment(id) {
+        const res = await api.put('api/comments/' + id + '/likes')
+        console.log(res.data);
+    }
+
 }
 
 export const commentsService = new CommentsService()
