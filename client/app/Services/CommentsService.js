@@ -21,6 +21,7 @@ class CommentsService {
     async deleteComment(id) {
         const res = await api.delete('api/comments/' + id)
         console.log(res.data);
+        ProxyState.currentComments = ProxyState.currentComments.filter(c => c.id !== id)
     }
 
 }
