@@ -1,5 +1,6 @@
 import { ProxyState } from "../AppState.js";
 import { commentsService } from "../Services/CommentsService.js";
+import { ThesaurusController } from "./ThesaurusController.js";
 
 function _draw() {
     let comments = ProxyState.currentComments
@@ -22,7 +23,8 @@ export class CommentsController {
         let form = window.event.target
         let data = {
             postId: id,
-            originalDescription: form.originalDescription.value
+            originalDescription: form.originalDescription.value,
+            editedDescription: await ThesaurusController.changeDescription(form.originalDescription.value)
         }
         form.reset()
         // console.log(data);
