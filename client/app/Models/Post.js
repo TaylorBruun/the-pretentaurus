@@ -53,12 +53,17 @@ export class Post {
       <div class="col-6">
         <p>${this.originalDescription}</p>
       </div>
-      <form class="form" onsubmit="app.commentsController.createComment('${this.id}')">
+      <div class="col-md-6 "></div>
+      <div class="col-md-6">
+      <form class="form rounded" onsubmit="app.commentsController.createComment('${this.id}')">
           <input name="originalDescription" id="originalDescription" autofocus required minlength="3" type="text"
             aria-label="Enter a comment" placeholder="Comment">
         </form>
     </div>
+    </div>
 `
   }
+
+
 }
 
