@@ -1,0 +1,33 @@
+{
+    "cSpell.words": [
+        "bcwdev",
+        "Btvuw",
+        "cbpq",
+        "commentor",
+        "doesnt",
+        "Hvef"
+    ],
+    "workbench.colorCustomizations": {
+        "activityBar.activeBackground": "#e8e3d4",
+        "activityBar.activeBorder": "#59a693",
+        "activityBar.background": "#e8e3d4",
+        "activityBar.foreground": "#15202b",
+        "activityBar.inactiveForeground": "#15202b99",
+        "activityBarBadge.background": "#59a693",
+        "activityBarBadge.foreground": "#15202b",
+        "sash.hoverBorder": "#e8e3d4",
+        "statusBar.background": "#d7ceb2",
+        "statusBar.foreground": "#15202b",
+        "statusBarItem.hoverBackground": "#c6b990",
+        "statusBarItem.remoteBackground": "#d7ceb2",
+        "statusBarItem.remoteForeground": "#15202b",
+        "titleBar.activeBackground": "#d7ceb2",
+        "titleBar.activeForeground": "#15202b",
+        "titleBar.inactiveBackground": "#d7ceb299",
+        "titleBar.inactiveForeground": "#15202b99"
+    },
+    "peacock.color": "D7CEB2",
+    "cSpell.ignoreWords": [
+        "pretentaurus"
+    ]
+}
