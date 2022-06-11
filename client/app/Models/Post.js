@@ -25,7 +25,7 @@ export class Post {
   <h4 class="text-center">${this.title}</h4>
   <p class="text-center">${this.editedDescription}</p>
   <div class="d-flex justify-content-between">
-   <button type="button" onclick="app.postsController.populateModal('${this.id}')" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#post-comment-modal">
+  <button type="button" onclick="app.postsController.populateModal('${this.id}')" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#post-comment-modal">
   See details
 </button>
     <button class="btn btn-danger " onclick="app.postsController.deletePost('${this.id}')">Delete</button>
