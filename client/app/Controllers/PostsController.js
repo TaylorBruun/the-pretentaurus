@@ -19,8 +19,8 @@ export class PostController {
 
     getCurrentComments(postId) {
 
-        console.log(postId);
-        ProxyState.currentComments = ProxyState.comments.filter(c => c.postId.toString() == postId.toString())
+        console.log(postId, 'here is post id');
+        ProxyState.currentComments = ProxyState.comments.filter(c => c.postId == postId.toString())
         console.log(ProxyState.comments);
         console.log(ProxyState.currentComments);
     }
