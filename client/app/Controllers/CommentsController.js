@@ -25,7 +25,7 @@ export class CommentsController {
             originalDescription: form.originalDescription.value
         }
         form.reset()
-        console.log(data);
+        // console.log(data);
         try {
             await commentsService.createComment(data)
         } catch (error) {
