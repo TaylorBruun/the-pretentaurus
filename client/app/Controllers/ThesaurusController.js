@@ -6,7 +6,7 @@ export class ThesaurusController {
 
   }
 
-  async changeDescription(desc) {
+  static async changeDescription(desc) {
     try {
       console.log("trying here at change description");
       let editedString = await thesaurusService.changeDescription(desc)

@@ -1,5 +1,7 @@
+
 import { ProxyState } from "../AppState.js";
 import { postsService } from "../Services/PostsService.js";
+import { ThesaurusController } from "./ThesaurusController.js";
 
 function _draw() {
     let posts = ProxyState.posts
@@ -41,7 +43,7 @@ export class PostsController {
             imgUrl: form.url.value,
             title: form.title.value,
             originalDescription: form.description.value,
-            editedDescription: form.description.value
+            editedDescription: await ThesaurusController.changeDescription(form.description.value)
         }
         form.reset()
         console.log(data);
