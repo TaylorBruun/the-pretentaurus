@@ -3,7 +3,7 @@ import { thesaurusService } from "../Services/ThesaurusService.js";
 
 export class ThesaurusController {
   constructor() {
-    this.changeDescription("graduated")
+
   }
 
   static async changeDescription(desc) {
