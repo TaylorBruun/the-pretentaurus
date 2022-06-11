@@ -17,7 +17,7 @@ export class Comment {
         ${this.name}
       </div>
       <div class="col-9 m-1 d-flex justify-content-between">
-        ${this.originalDescription}
+        ${this.editedDescription}
         <span class="mdi mdi-arrow-up like-mdi " onclick="app.commentsController.likeComment('${this.id}')"><span>${this.numberOfLikes}</span></span>
         <button class="mdi mdi-delete" onclick="app.commentsController.deleteComment('${this.id}')"></button>
       </div>
